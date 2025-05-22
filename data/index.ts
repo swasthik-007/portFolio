@@ -119,8 +119,8 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "CarePulse",
+    des: "A healthcare management app streamlines patient care by integrating appointment scheduling, medical records, billing, and communication into a unified digital platform — improving efficiency for both providers and patients.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://care-plus-2.vercel.app",
