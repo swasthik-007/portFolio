@@ -1,18 +1,15 @@
 "use client";
 
-import * as Sentry from "@sentry/nextjs";
 import Error from "next/error";
-import { useEffect } from "react";
 
-export default function GlobalError({ error }) {
-  useEffect(() => {
-    Sentry.captureException(error);
-  }, [error]);
+export default function GlobalError({ error }: { error: Error }) {
+  // You can log the error locally or leave it clean
+  console.error("Global error caught:", error);
 
   return (
     <html>
       <body>
-        <Error />
+        <Error statusCode={500} title="Something went wrong" />
       </body>
     </html>
   );
